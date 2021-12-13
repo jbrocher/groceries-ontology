@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "@inrupt/artifact-generator": "^1.0.4",
-    "@inrupt/solid-common-vocab": "^1.0.0"
+    "@inrupt/solid-common-vocab": "^1.0.0",
+    "webpack": "^5.65.0"
   }
 }
