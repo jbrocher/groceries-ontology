@@ -1,0 +1,12 @@
+{
+  "name": "groceries-ontology",
+  "version": "1.0.0",
+  "description": "Ontology for grocery lists",
+  "main": "index.js",
+  "repository": "git@github.com:jbrocher/groceries-ontology.git",
+  "author": "Jean-Baptiste Rocher <jeanb.rocher@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@inrupt/artifact-generator": "^1.0.4"
+  }
+}
