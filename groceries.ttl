@@ -1,8 +1,3 @@
-export const GroceryListItem = "http://gl/GroceryListItem";
-export const GroceryList = "http://gl/GroceryList";
-export const groceryListItemDone = "http://gl/GroceryListItemDone";
-export const groceryListItemObject = "http://gl/GroceryListItemObject";
-
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -22,7 +17,7 @@ groceries: a owl:Ontology, inrupt_gen:Ontology ;
     dcterms:title "Groceries vocalbulary"@en ;
     dcterms:description "A vocabulary for describing groceries list"@en ;
     vann:preferredNamespacePrefix "groceries" ;
-    vann:preferredNamespaceUri "https://pod.inrupt.com/jbrocher/public/ontologies/Groceries.ttl#" ;
+    vann:preferredNamespaceUri "https://pod.inrupt.com/jbrocher/public/ontologies/Groceries.ttl#" .
 
 
 groceries:GroceryList a rdfs:Class ;
@@ -35,17 +30,17 @@ groceries:GroceryList a rdfs:Class ;
 groceries:GroceryListItem a rdfs:Class ;
   rdfs:isDefinedBy groceries: ;
   rdfs:label "Grocery list item"@en ;
-  rdfs:label "Un article sur une liste de course"@fr ;
+  rdfs:label "Un article sur une liste de course"@fr .
 
 groceries:done a rdf:Property ;
   rdfs:domain groceries:GroceryListItem ;
   rdfs:label "Done"@en ;
   rdfs:label "Fait"@fr ;
-  rdfs:comment "Wether the item is done or not"@en ;
+  rdfs:comment "Wether the item is done or not"@en .
 
 groceries:ItemObject a rdf:Property ;
   rdfs:domain groceries:GroceryListItem ;
-  rdfs:range fo:Food
+  rdfs:range fo:Food ;
   rdfs:label "Grocery List item object"@en ;
   rdfs:label "Object de l'article"@fr ;
-  rdfs:comment "The object on the grocery list item"@en ;
+  rdfs:comment "The object on the grocery list item"@en .
